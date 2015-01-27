@@ -63,16 +63,20 @@ img {
  * Analizar si los datos se ajustan bien a un modelo teórico
  * Analizar fenómenos espacio-temporales (avanzado)
 
-<iframe width="250" height="150" frameborder="0"
+<iframe width="200" height="125" frameborder="0"
   src="http://player.vimeo.com/video/104330415?title=0&amp;byline=0&amp;portrait=0" >
 </iframe>
+
+[https://vimeo.com/104330415] 
 
 --- 
 ## Evolución de un proceso ecológico en diferentes ecosistemas
 
-<iframe width="250" height="150" frameborder="0"
+<iframe width="220" height="120" frameborder="0"
   src="http://player.vimeo.com/video/22945147?title=0&amp;byline=0&amp;portrait=0" >
 </iframe>
+
+[Fuente: B. Benito](https://vimeo.com/22945147)
 
 --- .quote
 ## Objetivos:
@@ -134,6 +138,8 @@ sólo depende del número de observaciones que distan entre ambas
 
 Falk M (2012). A First Course on Time Series Analysis - Examples with SAS. Chair of Statistics, University of Wurzburg. [link](http://www.statistik-mathematik.uni-wuerzburg.de/wissenschaftforschung/time_series/the_book/) 
 
+Cayuela L and Justel A (2012) [Series temporales en R.](https://dl.orangedox.com/9fzOYs2ZoimR4izLVE/7-Series%20temporales%20en%20R.pdf)  
+
 <p align="center"><img src="images/libros.png" height="400 width="800"></p>
 
 
@@ -158,6 +164,13 @@ Falk M (2012). A First Course on Time Series Analysis - Examples with SAS. Chair
 <br>
 <br>
 <q align=right>Un pequeño __reto__</q>
+
+--- .quote
+## Material 
+
+* [Repositorio de la asignatura](https://github.com/iEcolab/ecoinformatica_2014_2015) (sesion 5)
+  * Presentación: http://ajpelu.github.io/ts_slides_ecoinfo/) 
+  * Código 
 
 --- .minicodefont
 
@@ -345,6 +358,16 @@ summary(ml)
 <q align=right>¿En que meses es __mayor__ la tendencia</q>
 
 --- .minicodefont 
+
+
+```
+## 
+## Attaching package: 'zoo'
+## 
+## The following objects are masked from 'package:base':
+## 
+##     as.Date, as.Date.numeric
+```
 
 ![plot of chunk unnamed-chunk-15](assets/fig/unnamed-chunk-15.png) 
 

@@ -127,9 +127,11 @@ img {
 <li>Analizar fenómenos espacio-temporales (avanzado)</li>
 </ul>
 
-<iframe width="250" height="150" frameborder="0"
+<iframe width="200" height="125" frameborder="0"
   src="http://player.vimeo.com/video/104330415?title=0&amp;byline=0&amp;portrait=0" >
 </iframe>
+
+<p>[<a href="https://vimeo.com/104330415">https://vimeo.com/104330415</a>] </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -140,9 +142,11 @@ img {
     <h2>Evolución de un proceso ecológico en diferentes ecosistemas</h2>
   </hgroup>
   <article data-timings="">
-    <iframe width="250" height="150" frameborder="0"
+    <iframe width="220" height="120" frameborder="0"
   src="http://player.vimeo.com/video/22945147?title=0&amp;byline=0&amp;portrait=0" >
 </iframe>
+
+<p><a href="https://vimeo.com/22945147">Fuente: B. Benito</a></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -259,6 +263,8 @@ sólo depende del número de observaciones que distan entre ambas</li>
 
 <p>Falk M (2012). A First Course on Time Series Analysis - Examples with SAS. Chair of Statistics, University of Wurzburg. <a href="http://www.statistik-mathematik.uni-wuerzburg.de/wissenschaftforschung/time_series/the_book/">link</a> </p>
 
+<p>Cayuela L and Justel A (2012) <a href="https://dl.orangedox.com/9fzOYs2ZoimR4izLVE/7-Series%20temporales%20en%20R.pdf">Series temporales en R.</a>  </p>
+
 <p align="center"><img src="images/libros.png" height="400 width="800"></p>
 
   </article>
@@ -305,7 +311,25 @@ sólo depende del número de observaciones que distan entre ambas</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-17" style="background:;">
+<slide class="quote" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Material</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><a href="https://github.com/iEcolab/ecoinformatica_2014_2015">Repositorio de la asignatura</a> (sesion 5)
+
+<ul>
+<li>Presentación: <a href="http://ajpelu.github.io/ts_slides_ecoinfo/">http://ajpelu.github.io/ts_slides_ecoinfo/</a>) </li>
+<li>Código </li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="minicodefont" id="slide-18" style="background:;">
   <article data-timings="">
     <pre><code class="r">m &lt;- lm(p$prec~p$year)
 msum &lt;- summary(m)
@@ -323,7 +347,7 @@ msum$coefficients
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="quote" id="slide-18" style="background:;">
+<slide class="quote" id="slide-19" style="background:;">
   <hgroup>
     <h2>Test de Mann-Kendall</h2>
   </hgroup>
@@ -351,7 +375,7 @@ msum$coefficients
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="quote" id="slide-19" style="background:;">
+<slide class="quote" id="slide-20" style="background:;">
   <article data-timings="">
     <ul>
 <li><p>Muy utilizado para el análisis de tendencias en series temporales en climatología, hidrología, etc. </p></li>
@@ -376,7 +400,7 @@ msum$coefficients
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-20" style="background:;">
+<slide class="" id="slide-21" style="background:;">
   <article data-timings="">
     <p align="center"><img src="images/mapa_onto.png" height="600" width="1000"></p>
 
@@ -384,7 +408,7 @@ msum$coefficients
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="quote" id="slide-21" style="background:;">
+<slide class="quote" id="slide-22" style="background:;">
   <article data-timings="">
     <p><br>
 <br>
@@ -395,7 +419,7 @@ msum$coefficients
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-22" style="background:;">
+<slide class="" id="slide-23" style="background:;">
   <hgroup>
     <h1>Evolución de la sequía en el estado de California durante los últimos 120 años</h1>
   </hgroup>
@@ -420,7 +444,7 @@ msum$coefficients
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-23" style="background:;">
+<slide class="" id="slide-24" style="background:;">
   <article data-timings="">
     <p><img src="images/cumulative_water_storage.jpg" alt="water_loss"></p>
 
@@ -430,7 +454,7 @@ msum$coefficients
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-24" style="background:;">
+<slide class="" id="slide-25" style="background:;">
   <hgroup>
     <h1>¿Qué vamos a hacer?</h1>
   </hgroup>
@@ -445,7 +469,7 @@ msum$coefficients
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-25" style="background:;">
+<slide class="minicodefont" id="slide-26" style="background:;">
   <article data-timings="">
     <pre><code class="r">anual &lt;- read.table(&#39;http://www.iecolab.es/ecoinfo/scpdsi_annual.csv&#39;, header = TRUE, sep=&#39;,&#39;)
 str(anual)
@@ -472,7 +496,7 @@ str(anual)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-26" style="background:;">
+<slide class="minicodefont" id="slide-27" style="background:;">
   <article data-timings="">
     <pre><code class="r">plot(anual$year, anual$scpdsi, type=&#39;o&#39;, 
      xlab=&#39;year&#39;, pch=19, col=&#39;#325B84&#39;,
@@ -487,7 +511,7 @@ abline(h=-2, lty=2, col=&#39;red&#39;)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-27" style="background:;">
+<slide class="minicodefont" id="slide-28" style="background:;">
   <hgroup>
     <h1>Analizar la tendencia</h1>
   </hgroup>
@@ -514,7 +538,7 @@ summary(ml)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-28" style="background:;">
+<slide class="minicodefont" id="slide-29" style="background:;">
   <article data-timings="">
     <p><img src="assets/fig/unnamed-chunk-13.png" alt="plot of chunk unnamed-chunk-13"> </p>
 
@@ -522,7 +546,7 @@ summary(ml)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-29" style="background:;">
+<slide class="minicodefont" id="slide-30" style="background:;">
   <article data-timings="">
     <pre><code class="r">summary(ml)
 </code></pre>
@@ -551,7 +575,7 @@ summary(ml)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="quote" id="slide-30" style="background:;">
+<slide class="quote" id="slide-31" style="background:;">
   <article data-timings="">
     <p><br>
 <br>
@@ -562,15 +586,23 @@ summary(ml)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-31" style="background:;">
+<slide class="minicodefont" id="slide-32" style="background:;">
   <article data-timings="">
-    <p><img src="assets/fig/unnamed-chunk-15.png" alt="plot of chunk unnamed-chunk-15"> </p>
+    <pre><code>## 
+## Attaching package: &#39;zoo&#39;
+## 
+## The following objects are masked from &#39;package:base&#39;:
+## 
+##     as.Date, as.Date.numeric
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-15.png" alt="plot of chunk unnamed-chunk-15"> </p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="quote" id="slide-32" style="background:;">
+<slide class="quote" id="slide-33" style="background:;">
   <hgroup>
     <h2>Estimación de la magnitud de la tendencia</h2>
   </hgroup>
@@ -588,7 +620,7 @@ summary(ml)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-33" style="background:;">
+<slide class="minicodefont" id="slide-34" style="background:;">
   <hgroup>
     <h1>Cargar Datos</h1>
   </hgroup>
@@ -621,7 +653,7 @@ str(mensual)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-34" style="background:;">
+<slide class="minicodefont" id="slide-35" style="background:;">
   <hgroup>
     <h1>Preparar Datos</h1>
   </hgroup>
@@ -644,7 +676,7 @@ head(mensuales)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-35" style="background:;">
+<slide class="minicodefont" id="slide-36" style="background:;">
   <hgroup>
     <h1>Convertir datos</h1>
   </hgroup>
@@ -665,7 +697,7 @@ str(mizoo)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="minicodefont" id="slide-36" style="background:;">
+<slide class="minicodefont" id="slide-37" style="background:;">
   <hgroup>
     <h1>Calcular la tendencia y estimar la pendiente</h1>
   </hgroup>
@@ -691,7 +723,7 @@ theil &lt;- mannKen(as.ts(mizoo))
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="quote" id="slide-37" style="background:;">
+<slide class="quote" id="slide-38" style="background:;">
   <article data-timings="">
     <p><br>
 <br>
@@ -702,7 +734,7 @@ theil &lt;- mannKen(as.ts(mizoo))
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-38" style="background:;">
+<slide class="" id="slide-39" style="background:;">
   <article data-timings="">
     <p><img src="images/end.png" alt=""></p>
 
@@ -812,19 +844,19 @@ theil &lt;- mannKen(as.ts(mizoo))
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=17 title=''>
+        data-slide=17 title='Material'>
          17
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='Test de Mann-Kendall'>
+        data-slide=18 title=''>
          18
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=19 title=''>
+        data-slide=19 title='Test de Mann-Kendall'>
          19
       </a>
     </li>
@@ -842,25 +874,25 @@ theil &lt;- mannKen(as.ts(mizoo))
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='Evolución de la sequía en el estado de California durante los últimos 120 años'>
+        data-slide=22 title=''>
          22
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title=''>
+        data-slide=23 title='Evolución de la sequía en el estado de California durante los últimos 120 años'>
          23
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='¿Qué vamos a hacer?'>
+        data-slide=24 title=''>
          24
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=25 title=''>
+        data-slide=25 title='¿Qué vamos a hacer?'>
          25
       </a>
     </li>
@@ -872,13 +904,13 @@ theil &lt;- mannKen(as.ts(mizoo))
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=27 title='Analizar la tendencia'>
+        data-slide=27 title=''>
          27
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=28 title=''>
+        data-slide=28 title='Analizar la tendencia'>
          28
       </a>
     </li>
@@ -902,37 +934,37 @@ theil &lt;- mannKen(as.ts(mizoo))
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=32 title='Estimación de la magnitud de la tendencia'>
+        data-slide=32 title=''>
          32
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=33 title='Cargar Datos'>
+        data-slide=33 title='Estimación de la magnitud de la tendencia'>
          33
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=34 title='Preparar Datos'>
+        data-slide=34 title='Cargar Datos'>
          34
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=35 title='Convertir datos'>
+        data-slide=35 title='Preparar Datos'>
          35
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=36 title='Calcular la tendencia y estimar la pendiente'>
+        data-slide=36 title='Convertir datos'>
          36
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=37 title=''>
+        data-slide=37 title='Calcular la tendencia y estimar la pendiente'>
          37
       </a>
     </li>
@@ -940,6 +972,12 @@ theil &lt;- mannKen(as.ts(mizoo))
       <a href="#" target="_self" rel='tooltip' 
         data-slide=38 title=''>
          38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title=''>
+         39
       </a>
     </li>
   </ul>
